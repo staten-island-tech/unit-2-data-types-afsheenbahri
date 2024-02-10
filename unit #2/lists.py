@@ -25,6 +25,8 @@ for animal in animals:
 x = "Hello Safarians"
 y = x.upper()
 
+#y makes the words capiltalized.
+
 for animals in animals:
     print(x[0])
     print(y)
@@ -38,3 +40,7 @@ for animals in animals:
     print(words_list)
     print(len(words_list))
     print(len(x))
+    
+# print(words_list) separate the words
+# print(len(words_list)) counts how many words are within that sentence
+# print(len(x)) counts how many letters are within that sentence
