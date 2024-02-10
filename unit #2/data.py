@@ -47,6 +47,9 @@ def print_factors(x):
        if(x % i == 0):
            print(i)
 
+# for i in range(1, x + 1) uses every one of the 45 numbers, with one being the starting number since it is part of the factor system, and ending at 46
+# if(x % i == 0) uses the value of 1 to even divide itself with 45 to get the next factor
+
 number = 45
 
 print_factors(number)
@@ -57,6 +60,8 @@ def gcf(x, y):
         return abs(x)
     else:
         return gcf(y, x % y)
+    
+# if y, being the next number, results in an absolute value that makes it equal to zero, x is also likely to have an absolute value, too (making it possible to find factors that they have in common); if not, the gcf is not being met
  
 x = 45
 y = 50
