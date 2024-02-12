@@ -47,6 +47,9 @@ def print_factors(x):
        if(x % i == 0):
            print(i)
 
+# for i in range(1, x + 1) uses every one of the 45 numbers, with one being the starting number since it is part of the factor system, and ending at 46
+# if(x % i == 0) uses the value of 1 to even divide itself with 45 to get the next factor
+
 number = 45
 
 print_factors(number)
@@ -65,3 +68,4 @@ factors = 1, 5
 
 check_if_0(45, 50)
 print(factors[-1])
+
