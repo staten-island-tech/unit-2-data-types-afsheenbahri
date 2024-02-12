@@ -52,14 +52,16 @@ number = 45
 print_factors(number)
 
 #Challenge 4
-def gcf(x, y):
-    if(y == 0):
-        return abs(x)
+def check_if_0(x, y):
+    if(y == 0 and x == 0):
+        print("one is 0")
     else:
-        return gcf(y, x % y)
- 
+        print("none are 0")
+    
 x = 45
 y = 50
+factors = 1, 5
  
 
-print(gcf(45, 50))
+check_if_0(45, 50)
+print(factors[-1])
