@@ -66,6 +66,15 @@ y = 50
 factors = 1, 5
  
 
-check_if_0(45, 50)
-print(factors[-1])
+def gcf(45,50):
+if(45 % 5 = 0 and 50 % 5 = 0):
+    print('5 is the gcf')
+elif(45 % 1 = 0 and 50 % 1 = 0):
+    print('1 is the gcf')
+else: 
+    print('no gcf')
+
+print(gcf[5])
+
+
 
