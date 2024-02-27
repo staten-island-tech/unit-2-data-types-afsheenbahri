@@ -63,18 +63,15 @@ def check_if_0(x, y):
     
 x = 45
 y = 50
-factors = 1, 5
- 
+common_factors = 1, 5
+common_factor1 = 1
+common_factor2 = 5
+z = ('x','y')
 
-def gcf(45,50):
-if(45 % 5 = 0 and 50 % 5 = 0):
+gcf = 5
+if(gcf == 'common_factor2'):
     print('5 is the gcf')
-elif(45 % 1 = 0 and 50 % 1 = 0):
+elif(gcf == 'common_factor1'):
     print('1 is the gcf')
-else: 
-    print('no gcf')
-
-print(gcf[5])
-
 
 
