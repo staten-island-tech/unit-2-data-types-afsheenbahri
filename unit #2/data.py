@@ -66,7 +66,6 @@ y = 50
 common_factors = 1, 5
 common_factor1 = 1
 common_factor2 = 5
-z = ('x','y')
 
 gcf = 5
 if(gcf == 'common_factor2'):
