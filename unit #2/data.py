@@ -42,38 +42,36 @@ elif bill == 15:
     
 #Challenge 3
 def print_factors(x):
-   print("The factors of",x,"are:")
+   print("The factors of",'x',"are:")
    for i in range(1, x + 1):
-       if(x % i == 0):
+       if x % i == 0:
            print(i)
 
-# for i in range(1, x + 1) uses every one of the 45 numbers, with one being the starting number since it is part of the factor system, and ending at 46
-# if(x % i == 0) uses the value of 1 to even divide itself with 45 to get the next factor
+# for i in range(1, x + 1) starts at 1 and finds the factor that would go along with 1 (+1) to end up with the product, and so on (for the rest of the factors)(no comma with x so that x is included in the list).
+# if(x % i == 0) uses the value of i to even divide x evenly, and IF true (==0), then the factors will be printed out.
 
 number = 45
 
 print_factors(number)
 
 #Challenge 4
-    
+def gcf(x, y):
+   if(x > y):
+       x,y = y,x
+   for i in range(x,0,-1):
+       if((x % i == 0) and (y % i == 0)):
+           return i
+
+# if x is greater than y, then y is also greater than x. This function makes both variables have something in common with one another, no matter how big or small they may be. This is done by saying that both x and y are great and are also small. 
+# by claiming this, it allows the x to justify its position as it is being used in the function.
+# for i in range(x,0,-1) starts at x and transitions to (0) find the gcf down in the list of factors (-1).
+# if(x % i == 0) and (y % i == 0) uses the value of i that is found in both x and y and evenly divides out both of them.
+# by return, we have also justified and proved how the statements (IFs) are true and found out the gcf.
+       
+print("The gcf is", gcf(45, 50))
+
+gcf = 'i'
 x = 45
 y = 50
-common_factors = 1, 5
-common_factor1 = 1
-common_factor2 = 5
-
-gcf = 5
-
-#Assume we knew what the factors are for 50 by using the same funcion written above to find the factors of 45. Thus, ending up with common factors of 1 and 5.
-#gcf always ends up being the last common factor that is the largest of them all.
-#So in this case, common_factor2 seems to be the perfect fit for the gcf, for it is the last common factors that is the greatest of all.
-#Now, to make this true, I use the function below to show how they are equal to one another and make the function print out 5 as the gcf. (If common_factor2 is equal to 5, so is going to be the gcf.)
-#If the gcf is NOT equal to common_factor1, then the gcf will be whatever value that common_factor1 is.
-#It is very likely for the function to print out the gcf as 5, for there is enough information to prove it.
-
-if(gcf == 'common_factor2'):
-    print('5 is the gcf')
-elif(gcf == 'common_factor1'):
-    print('1 is the gcf')
 
 
