@@ -64,6 +64,8 @@ common_factor2 = 5
 
 gcf = 5
 #gcf always ends up being the last common factor that is the largest of them all.
+#So in this case, common_factor2 seems to be the perfect fit for the gcf, for it is the last common factors that is the greatest of all.
+#Now, to make this true, I use the function below to show how they are equal to one another and make the function print out 5 as the gcf. (If common_factor2 is equal to 5, so is going to be the gcf.)
 
 if(gcf == 'common_factor2'):
     print('5 is the gcf')
