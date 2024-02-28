@@ -63,6 +63,8 @@ common_factor1 = 1
 common_factor2 = 5
 
 gcf = 5
+#gcf always ends up being the last common factor that is the largest of them all.
+
 if(gcf == 'common_factor2'):
     print('5 is the gcf')
 elif(gcf == 'common_factor1'):
