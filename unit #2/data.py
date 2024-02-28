@@ -55,11 +55,6 @@ number = 45
 print_factors(number)
 
 #Challenge 4
-def check_if_0(x, y):
-    if(y == 0 and x == 0):
-        print("one is 0")
-    else:
-        print("none are 0")
     
 x = 45
 y = 50
